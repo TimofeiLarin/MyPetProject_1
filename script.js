@@ -3,6 +3,47 @@ let taskText = document.querySelector('.task-text');
 let important = document.querySelector('.important');
 let taskAdd = document.querySelector('.task-add');
 
+let Tasks = []
+
+function render () {
+  Tasks.forEach((element, index, array) => {
+
+  })
+}
+
+function addTask(value) {
+  const newTask = {
+    id: Tasks.length + 1,
+    text: value,
+    status: "active",
+    time: new Date()
+  }
+  Tasks.push(newTask)
+  render()
+
+}
+
+function deteleTask (id) {
+  Tasks = Tasks.filter((el) => el.id !== id)
+  render()
+}
+
+function changeStatusTask (id) {
+  Tasks = Tasks.map(el => {
+      if (el.id === el) {
+        return {
+          ...el,
+          status: someTask.status === "active" ? "complete" : "active"
+        }
+      }
+      return el
+    }
+  )
+
+
+  render()
+}
+
 taskAdd.addEventListener('click', function() {
   
   if(taskText.value === '') return;
@@ -12,7 +53,7 @@ taskAdd.addEventListener('click', function() {
 });
 
 function addDeleteTasks(value) {
-
+  console.log(value, "value")
   let task = document.createElement('li');
   let buttonCompleteTask = document.createElement('button');
   let buttonDeleteTask = document.createElement('button');
