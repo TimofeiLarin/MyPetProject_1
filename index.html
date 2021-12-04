@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" sizes="40x40" href="image/icons8-40.png" type="image/x-icon">
+    <link rel="shortcut icon" sizes="80x80" href="image/icons8-80.png" type="image/x-icon">
+    <title>ToDoList</title>
+    
+  </head>
+  <body>
+    <section class="To-Do-List">
+
+      <div class="conteiner-list">
+
+        <h1>To Do List</h1>
+
+          <ol class="check-list">
+          </ol>
+
+          <div class="conteiner-form">
+            <label for="task-text">Write a task</label>
+            <input type="text" class="task-text" name="task-text" id="task-text" title="Введите свою задачу" required>
+            <label for="important">Task important?</label>
+            <input type="checkbox" class ="important" name="important" id="important" value="true">
+            <button type="button" class="task-add">Add task</button>
+          </div>
+
+      </div>
+
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
