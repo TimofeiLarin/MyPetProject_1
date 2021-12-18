@@ -84,6 +84,7 @@ h1 {
 
 .conteiner-form .task-text {
   max-width: 600px;
+  margin-bottom: 5px;
 }
 
 .conteiner-form .task-add {
